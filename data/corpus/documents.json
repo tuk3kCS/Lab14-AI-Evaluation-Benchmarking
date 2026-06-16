@@ -1,0 +1,124 @@
+{
+  "documents": [
+    {
+      "id": "eval_overview_001",
+      "source": "ai_evaluation_guide.pdf",
+      "section": "Tổng quan",
+      "content": "AI Evaluation là quy trình kỹ thuật đo lường chất lượng của hệ thống AI. Ba trụ cột chính gồm: Faithfulness (trung thực với nguồn), Relevancy (liên quan câu hỏi), và Retrieval Quality (chất lượng tìm kiếm tài liệu). Không thể đánh giá Generation mà bỏ qua Retrieval."
+    },
+    {
+      "id": "eval_metrics_002",
+      "source": "ai_evaluation_guide.pdf",
+      "section": "Metrics",
+      "content": "Hit Rate đo tỷ lệ câu hỏi mà ít nhất một tài liệu ground-truth xuất hiện trong top-k kết quả retrieval. MRR (Mean Reciprocal Rank) đo vị trí trung bình của tài liệu đúng đầu tiên: MRR = 1/vị_trí (1-indexed), bằng 0 nếu không tìm thấy."
+    },
+    {
+      "id": "eval_ragas_003",
+      "source": "ai_evaluation_guide.pdf",
+      "section": "RAGAS Framework",
+      "content": "RAGAS là framework đánh giá RAG tự động, tính các metric như faithfulness, answer_relevancy, context_precision và context_recall. RAGAS sử dụng LLM làm judge để chấm điểm mà không cần nhãn thủ công cho mọi câu."
+    },
+    {
+      "id": "eval_sdg_004",
+      "source": "ai_evaluation_guide.pdf",
+      "section": "Synthetic Data Generation",
+      "content": "SDG (Synthetic Data Generation) tạo Golden Dataset từ corpus bằng LLM hoặc template. Mỗi test case phải có question, expected_answer, context và expected_retrieval_ids để tính Hit Rate. Golden set cần ít nhất 50 cases với đủ loại easy, medium và adversarial."
+    },
+    {
+      "id": "eval_judge_005",
+      "source": "ai_evaluation_guide.pdf",
+      "section": "Multi-Judge",
+      "content": "Multi-Judge Consensus dùng ít nhất 2 model judge khác nhau (ví dụ GPT-4o và Claude). Agreement Rate đo mức đồng thuận giữa các judge. Khi xung đột điểm số, hệ thống cần logic tự động: lấy trung bình có trọng số, gọi judge thứ 3, hoặc flag để review thủ công."
+    },
+    {
+      "id": "eval_regression_006",
+      "source": "ai_evaluation_guide.pdf",
+      "section": "Regression Testing",
+      "content": "Regression Release Gate so sánh Agent phiên bản mới (V2) với phiên bản cũ (V1). Delta Analysis tính chênh lệch avg_score, hit_rate, latency và cost. Auto-Gate quyết định APPROVE hoặc BLOCK RELEASE dựa trên ngưỡng chất lượng, chi phí và hiệu năng."
+    },
+    {
+      "id": "support_password_007",
+      "source": "policy_handbook.pdf",
+      "section": "Bảo mật tài khoản",
+      "content": "Để đổi mật khẩu: vào Cài đặt > Bảo mật > Đổi mật khẩu. Mật khẩu mới phải có tối thiểu 12 ký tự, gồm chữ hoa, chữ thường, số và ký tự đặc biệt. Sau khi đổi, tất cả phiên đăng nhập cũ sẽ bị vô hiệu hóa trong vòng 15 phút."
+    },
+    {
+      "id": "support_2fa_008",
+      "source": "policy_handbook.pdf",
+      "section": "Xác thực 2 lớp",
+      "content": "Bật 2FA (Two-Factor Authentication) tại Cài đặt > Bảo mật > Xác thực 2 lớp. Hỗ trợ ứng dụng Authenticator (Google/Microsoft) hoặc SMS. Sau khi bật 2FA, mỗi lần đăng nhập từ thiết bị mới cần mã OTP 6 số, có hiệu lực 30 giây."
+    },
+    {
+      "id": "support_reset_009",
+      "source": "policy_handbook.pdf",
+      "section": "Khôi phục tài khoản",
+      "content": "Quên mật khẩu: nhấn 'Quên mật khẩu' tại trang đăng nhập, nhập email đã đăng ký. Link reset có hiệu lực 24 giờ, chỉ dùng được một lần. Nếu không nhận được email trong 10 phút, kiểm tra thư mục Spam hoặc liên hệ IT Support qua ticket #helpdesk."
+    },
+    {
+      "id": "support_vpn_010",
+      "source": "policy_handbook.pdf",
+      "section": "VPN nội bộ",
+      "content": "VPN công ty dùng giao thức WireGuard. Cài đặt client từ portal.internal/vpn. File cấu hình (.conf) chỉ tải được khi đã đăng nhập SSO. Không chia sẻ file cấu hình VPN cho người ngoài tổ chức — vi phạm sẽ bị khóa tài khoản ngay lập tức."
+    },
+    {
+      "id": "support_leave_011",
+      "source": "hr_policy.pdf",
+      "section": "Nghỉ phép",
+      "content": "Nhân viên chính thức được 12 ngày phép năm, cộng dồn tối đa 5 ngày sang năm sau. Đăng ký nghỉ phép trên hệ thống HR Portal ít nhất 3 ngày làm việc trước. Nghỉ đột xuất do ốm cần nộp giấy xác nhận bác sĩ trong 48 giờ."
+    },
+    {
+      "id": "support_remote_012",
+      "source": "hr_policy.pdf",
+      "section": "Làm việc từ xa",
+      "content": "Chính sách hybrid: tối đa 3 ngày/tuần làm việc từ xa. Đăng ký trên WorkFlex Portal trước 17h thứ Sáu tuần trước. Ngày onsite bắt buộc: thứ Ba và thứ Năm hàng tuần cho toàn bộ team Product."
+    },
+    {
+      "id": "support_expense_013",
+      "source": "finance_policy.pdf",
+      "section": "Hoàn ứng chi phí",
+      "content": "Hoàn ứng chi phí công tác: nộp trên Expense Portal trong vòng 30 ngày kể từ ngày phát sinh. Hóa đơn VAT bắt buộc cho chi phí trên 200.000 VNĐ. Phê duyệt cấp 1 bởi quản lý trực tiếp, cấp 2 bởi Finance nếu trên 5 triệu VNĐ."
+    },
+    {
+      "id": "support_api_014",
+      "source": "dev_docs.pdf",
+      "section": "API Rate Limit",
+      "content": "API public giới hạn 100 requests/phút cho tier Free, 1000 requests/phút cho tier Pro. Header X-RateLimit-Remaining cho biết số request còn lại. Vượt quota trả về HTTP 429 với Retry-After header. Liên hệ sales để nâng tier Enterprise."
+    },
+    {
+      "id": "support_chunk_015",
+      "source": "rag_best_practices.pdf",
+      "section": "Chunking Strategy",
+      "content": "Chunk size khuyến nghị: 512-1024 tokens với overlap 10-20%. Chunk quá nhỏ mất ngữ cảnh; chunk quá lớn giảm precision retrieval. Metadata mỗi chunk nên gồm: source, section, page, doc_id để trace lỗi hallucination."
+    },
+    {
+      "id": "support_ingest_016",
+      "source": "rag_best_practices.pdf",
+      "section": "Ingestion Pipeline",
+      "content": "Pipeline ingestion chuẩn: Extract (PDF/DOCX) → Clean (loại header/footer) → Chunk → Embed → Index vào Vector DB. Lỗi OCR hoặc encoding sai (UTF-8 vs Latin-1) là nguyên nhân phổ biến khiến retrieval trả về chunk sai nội dung."
+    },
+    {
+      "id": "conflict_retention_a",
+      "source": "hr_policy_draft_v1.pdf",
+      "section": "Data Retention",
+      "content": "Bản nháp v1: Dữ liệu chat log của Agent được lưu trữ 90 ngày trên server nội bộ, sau đó tự động xóa."
+    },
+    {
+      "id": "conflict_retention_b",
+      "source": "hr_policy_final_v2.pdf",
+      "section": "Data Retention",
+      "content": "Bản chính thức v2 (có hiệu lực 01/2025): Dữ liệu chat log của Agent được lưu trữ 365 ngày để phục vụ audit compliance, sau đó anonymize và archive."
+    },
+    {
+      "id": "support_sla_017",
+      "source": "sla_handbook.pdf",
+      "section": "SLA hỗ trợ",
+      "content": "SLA ticket hỗ trợ: P1 (hệ thống down) phản hồi trong 15 phút, P2 (lỗi nghiêm trọng) trong 2 giờ, P3 (lỗi thường) trong 8 giờ làm việc. Ticket P1 được escalate tự động tới on-call engineer qua PagerDuty."
+    },
+    {
+      "id": "support_onboard_018",
+      "source": "onboarding_guide.pdf",
+      "section": "Onboarding IT",
+      "content": "Nhân viên mới nhận laptop trong ngày đầu tiên. Tài khoản SSO được tạo tự động từ HR system trong vòng 24h trước ngày onboard. Checklist bắt buộc: cài antivirus, bật disk encryption, hoàn thành khóa Security Awareness 101 trên LMS."
+    }
+  ]
+}
