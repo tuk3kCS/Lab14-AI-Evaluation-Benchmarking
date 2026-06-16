@@ -12,13 +12,13 @@
 - **Điểm LLM-Judge trung bình:** 4.03 / 5.0
 - **Agreement Rate:** 93.6%
 - **Chi phí eval trung bình:** $0.000081/case (tổng $0.0050)
-- **Latency trung bình:** 55ms
+- **Latency trung bình:** 60ms
 
 ## 2. Regression Release Gate
 - **Quyết định:** APPROVE
 - **Score delta:** +1.975
 - **Hit rate delta:** +0.726
-- **Latency regression:** -35.3%
+- **Latency regression:** -31.4%
 
 ## 3. Phân nhóm lỗi (Failure Clustering)
 | Nhóm lỗi | Số lượng | Nguyên nhân dự kiến |
