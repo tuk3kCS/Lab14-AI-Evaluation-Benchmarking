@@ -20,7 +20,7 @@
 | 1   | Hoàng Đức Trường 2A202600552 | Tech Lead — Integration & Regression | `main.py`, `engine/release_gate.py`, `agent/main_agent.py`, `analysis/failure_analysis.md` |
 | 2   | Tùng                          | Data Lead — SDG & Golden Dataset     | `data/synthetic_gen.py`, `data/corpus/documents.json`                                      |
 | 3   | Duyên                         | Retrieval Engineer                   | `engine/retrieval_eval.py`, `engine/ragas_eval.py`                                         |
-| 4   | Hà                            | Multi-Judge Engineer                 | `engine/llm_judge.py`                                                                      |
+| 4   | Trần Hoàng Hà2A202600612     | Multi-Judge Engineer                 | `engine/llm_judge.py`                                                                      |
 | 5   | Hiểu                          | Performance & Runner Engineer        | `engine/runner.py`, `engine/failure_cluster.py`                                            |
 
 
